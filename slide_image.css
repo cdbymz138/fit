@@ -1,0 +1,84 @@
+.slider { /*всплывающие картинки*/
+    width: 50%;
+    height: 350px;
+    margin-left: 120px;
+    border-radius: 18px;
+    position: relative; /* Используем относительное позиционирование для контейнера слайдера */
+    display: flex;
+    white-space: nowrap;
+   /*background: linear-gradient(to right, #2b0000, #810000); /* Градиентный фон */
+}
+.slide { /*всплывающие картинки*/
+    width: 100%;
+    height: 350px;
+    position: absolute; /* Используем абсолютное позиционирование для слайдов */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Изначально скрываем слайды */
+    transform: translateX(-100%); /* Сдвигаем слайды влево за пределы видимости */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Добавляем плавную анимацию */
+    border-radius: 18px;
+}
+.slide.active {
+    opacity: 1; /* Делаем активный слайд видимым */
+    transform: translateX(0); /* Возвращаем активный слайд в исходное положение */
+}
+
+.slide.active .slide-content {
+    opacity: 1; /* Делаем контент видимым */
+    transform: translateY(0); /* Возвращаем контент в исходное положение */
+}
+
+button { /*изменяющийся текст*/
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+}
+button {
+    padding: 0px 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Темнее при наведении */
+}
+.slidere {
+    width: 33%;
+    height: 350px;
+    margin-left: 900px;
+    position: absolute;
+    margin-top: -350px;
+    border-radius: 18px;
+    position: relative; /* Используем относительное позиционирование для контейнера слайдера */
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.24);
+  /* background: linear-gradient(to right, #4f0000, #810000); /* Градиентный фон */  
+}
+.slidee {
+width: 100%;
+height: 350px;
+position: absolute; /* Используем абсолютное позиционирование для слайдов */
+justify-content: center;
+
+opacity: 0; /* Изначально скрываем слайды */
+transform: translateX(-100%); /* Сдвигаем слайды влево за пределы видимости */
+transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Добавляем плавную анимацию */
+border-radius: 18px;
+display: flex; /* Для вертикального выравнивания текста */
+flex-direction: column; /* Для вертикального выравнивания текста */
+}
+
+.slidee.activee {
+opacity: 1; /* Делаем активный слайд видимым */
+transform: translateX(0); /* Возвращаем активный слайд в исходное положение */
+} 

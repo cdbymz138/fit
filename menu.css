@@ -1,0 +1,85 @@
+html {
+    /*background-color: black;*/
+    background-image: url(image/fon5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.logo {
+    margin-right: 120px; /* Отступ справа от логотипа */
+}
+
+.logo img {
+    width: 225px; /* Ширина логотипа */
+    height: 80px; /* Высота логотипа */
+}
+
+.container {
+    padding: 0px; /* Отступ для контейнера */
+    width: 85%; /* Ширина контейнера */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание элементов меню по правому краю */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    background-color: rgba(0, 0, 0, 0.289); /* Полупрозрачный черный фон */
+    padding: 5px; /* Отступ внутри меню */
+    border-bottom-right-radius: 20px; /* Скругление нижнего правого угла */
+    border-bottom-left-radius: 20px; /* Скругление нижнего левого угла */
+    margin-left: 0px; /* Отступ слева */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Верхнее расположение меню */
+    z-index: 100; /* Меню поверх другого контента */
+    width: 84.2%; /* Ширина меню на весь экран */
+}
+
+.menu a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    background-color: rgba(0, 0, 0, 0.421); /* Полупрозрачный черный фон */
+    padding: 45px 15px 20px; /* Отступы внутри ссылок */
+    border-bottom-right-radius: 20px; /* Скругление нижнего правого угла */
+    border-bottom-left-radius: 20px; /* Скругление нижнего левого угла */
+    margin-right: 10px; /* Отступ справа */
+    position: relative; /* Для позиционирования дочерних элементов */
+    color: white; /* Цвет текста */
+    transition: background-color 0.3s ease; /* Плавный переход при наведении */
+}
+
+.menu a:hover {
+    background-color: #351b1b; /* Цвет фона при наведении */
+    color: rgb(255, 251, 251); /* Цвет текста при наведении */
+}
+
+.dropdown-content { /* Стили для выпадающего меню */
+    display: none; /* Скрыто по умолчанию */
+    position: absolute; /* Абсолютное позиционирование */
+    margin-top: 10px; /* Отступ сверху */
+    border-radius: 7px; /* Скругление углов */
+    padding: 0px; /* Отступ внутри */
+    z-index: 100; /* Выпадающее меню поверх другого контента */
+}
+
+.dropdown-content a { /* Стили для ссылок в выпадающем меню */
+    display: block; /* Занимает всю ширину */
+    text-align: left; /* Выравнивание текста по левому краю */
+    color: white; /* Цвет текста */
+}
+
+.dropdown:hover .dropdown-content { /* Появление выпадающего меню при наведении */
+    display: block;
+    color: white;
+}
+
+.gh { /* Стили для элемента с классом "gh" */
+    padding: 100px 300px; /* Отступы от краев */
+}

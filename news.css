@@ -1,0 +1,63 @@
+.containere {
+    margin-left: 115px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 84.6%; /* Занимать всю доступную ширину */
+  }
+
+  .item {
+    width: calc(33.33% - 30px); /* Ширина каждого элемента (33.33% - отступы) */
+    margin-bottom: 20px; /* Отступ между строками */
+    background-color: rgba(0, 0, 0, 0.289);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative; /* Для позиционирования элемента "время" */
+    transition: transform 0.2s ease-in-out; /* Добавляем плавный переход */
+  }
+
+  .item:hover {
+    opacity: 0.8; /* Затемнение при наведении */
+    transform: scale(1.05); /* Увеличиваем масштаб при наведении */
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    transition: transform 0.2s ease-in-out; /* Добавляем плавный переход */
+    position: relative; /* Для анимации движения */
+    z-index: 1; /* Чтобы картинка была поверх текста */
+    transform-origin: 50% 50%; /* Точка вращения в центре */
+  }
+
+  .item img:hover {
+    transform: scale(1.1) translate(0, -5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Анимация тени */
+  }
+
+  .item h3 {
+    color: white;
+    margin: 0;
+    text-align: center;
+  }
+
+  .time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  h1 {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }

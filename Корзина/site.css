@@ -1,0 +1,54 @@
+body {
+
+
+
+
+
+}
+h1 {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.block {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: rgba(235, 48, 28, 0.831); /* Прозрачный синий фон для блока *
+    margin-bottom: 20px; /* Увеличиваем расстояние между блоками */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 5px;
+    
+}
+.block:hover {
+    background-color: black; /* Изменяем цвет блока при наведении */
+    color: green; /* Изменяем цвет текста в блоке при наведении */
+    
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Устанавливаем начальный цвет текста гиперссылок */
+}
+img {
+    margin-bottom: 20px;
+}
+
+.block:hover a {
+    color: green; /* Изменяем цвет текста гиперссылки в блоке при наведении на блок */
+}
+h1:hover {
+    background-color: blue;
+    color: yellow;
+}
+a:hover{
+    text-decoration: underline;
+}
+

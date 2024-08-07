@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="slide_image.css">
+    <link rel="stylesheet" href="slide_text.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФИТ</title>
+    </head>
+    <center>
+        <div class="container">
+            <nav class="menu">
+        <div class="logo">
+            <img src="image/logo4.png">
+        </div>
+   <div class="dropdown">
+    <h3><a href="#" class="gh">Студенту</a>
+    <!--<div class="dropdown-content">
+      <a href="#">Ссылка 1</a>
+      <a href="#">Ссылка 2</a>
+      <a href="#">Ссылка 3</a><h3>
+    </div>-->
+  </div> 
+
+  <div class="dropdown">
+    <h3><a href="#" class="gh">Абитуриенту</a>
+    <!--<div class="dropdown-content">
+      <a href="#">Ссылка 1</a>
+      <a href="#">Ссылка 2</a>
+      <a href="#">Ссылка 3</a><h3>
+    </div>-->
+  </div> 
+
+  <div class="dropdown">
+    <h3><a href="#" class="gh">Образование</a>
+    <!--<div class="dropdown-content">
+      <a href="teacherspage.html">Преподаватели</a>
+      <a href="#">Ссылка 2</a>
+      <a href="#">Ссылка 3</a><h3>
+    </div>-->
+  </div> 
+
+  <div class="dropdown">
+    <h3><a href="#" class="gh">Наука и инновации</a>
+    <!--<div class="dropdown-content">
+      <a href="#">Ссылка 1</a>
+      <a href="#">Ссылка 2</a>
+      <a href="#">Ссылка 3</a><h3>
+    </div>-->
+  </div> 
+
+  <div class="dropdown">
+    <h3><a href="#" class="gh">О Факультете</a>
+   <!-- <div class="dropdown-content">
+      <a href="#">Ссылка 1</a>
+      <a href="#">Ссылка 2</a>
+      <a href="#">Ссылка 3</a><h3>
+    </div>-->
+  </div> 
+
+  <div class="dropdown">
+    <h3><a href="#" class="gh">Архив</a>
+    <!--<div class="dropdown-content">
+      <a href="#">Ссылка 1</a>
+      <a href="#">Ссылка 2</a>
+      <a href="#">Ссылка 3</a><h3>
+    </div>-->
+  </div> 
+</div>
+</nav>
+</center>
+
+
+<!--скрипт для того чтобы меню меняло цвет при прогкручивании-->
+<script>
+  window.addEventListener('scroll', function() {
+    var menu = document.querySelector('.menu');
+    var links = document.querySelectorAll('.menu a'); // Получаем все ссылки в меню
+    var scrollPos = window.pageYOffset;
+
+    if (scrollPos > 100) { // Изменяем цвет, когда пользователь прокрутил на 100 пикселей
+      menu.style.backgroundColor = 'hsl(0, 100%, 7%)'; // Более темный цвет
+      links.forEach(function(link) { // Перебираем каждую ссылку
+        link.style.backgroundColor = 'rgba(0, 0, 0, 0.421)'; // Устанавливаем красный цвет для каждой ссылки
+      });
+    } else {
+      menu.style.backgroundColor = 'rgba(0, 0, 0, 0.289)'; // Исходный цвет
+      links.forEach(function(link) {
+        link.style.backgroundColor = 'rgba(0, 0, 0, 0.421)'; // Возвращаем исходный цвет ссылкам
+      });
+    }
+  });
+</script>
+
+
+<br><br><br><br><br><br><br>
+    <div class="slider">
+        <!-- Контейнер для слайдов -->
+        <div class="slide activee">
+          <img src="image/slides/Byy.png" width="100%" height="350px" style="border-radius: 25px;">
+            <!-- Первый слайд, активный по умолчанию -->
+        </div>
+        <div class="slide">
+            <!-- Второй слайд -->
+            <img src="image/slides/byyy.png" width="100%" height="350px" style="border-radius: 25px;">
+        </div>
+        <div class="slide">
+            <!-- Третий слайд -->
+            <img src="image/slides/PR.png" width="100%" height="350px" style="border-radius: 25px;">
+        </div>
+    </div>
+<!---->
+<div class="slidere">
+  <div class="slidee activee" id="slide2">
+    <h1 style="color: white; margin-left: 15px; margin-right: 15px; margin-bottom: 5px; text-align: left; margin-top: -25px;">Посвящение студентов первого курса</h1>
+    <h3 style="color: white; margin-left: 10px; margin-right: 10px;">22 сентября 2023 года на базу отдыха ТГУ состоялось культурно-массовое мероприятие посвящение студентов первого курса ФИТ ТГУ</h3>
+    <button onclick="showDetails()" style="margin-left: 10px; margin-right: 10px;"><h4>Подробнее</h4></button>
+  </div>
+
+  <div class="slidee" id="slide3">
+    <h2 style="color: white; margin-left: 15px; margin-bottom: 5px; margin-right: 15px">Открыт набор в магистратуру совместно с Передовой инженерной школой «Агробиотек»</h2>
+    <h3 style="color: white; margin-left: 15px; margin-right: 15px">Магистерские программы "Отраслевой инжиниринг" и "Компьютерная инженерия: 
+      ИИ и робототехника" реализуется совместностью с Передовой инженерной школой «Агробиотек» с 2023 года.</h3>
+    <button onclick="showDetails()" style="margin-left: 10px; margin-right: 10px;"><h4>Подробнее</h4></button>
+  </div>
+
+  <div class="slidee" id="slide1">
+    <h1 style="color: white; margin-left: 15px; margin-right: 15px; margin-bottom: 5px; text-align: left; margin-top: -25px;">Инноватика 2024</h1>
+    <h3 style="color: white; margin-left: 15px; margin-right: 15px">25-27 апреля 2024 года состоялась XX ежегодная Международная школа-конференция студентов, аспирантов и молодых ученых.</h3>
+    <button onclick="showDetails()" style="margin-left: 15px; margin-right: 15px;"><h4>Подробнее</h4></button>
+  </div>
+
+</div>
+
+<!--Скрипт для того чтобы картинки крутились-->
+<script>
+  // Слайдер 1 (slidee)
+  const slidese = document.querySelectorAll(".slidee");
+  let currentSlide = 0;
+
+  function nextSlidee() {
+    slidese[currentSlide].classList.remove("activee");
+    currentSlide = (currentSlide + 1) % slidese.length;
+    slidese[currentSlide].classList.add("activee");
+  }
+
+  // Слайдер 2 (slide)
+  const slides = document.querySelectorAll('.slide');
+  let currentSlideIndex = 0;
+
+  function showDetails() {
+    window.location.href = 'details.html';
+  }
+
+  function showSlide() {
+    // Очищаем классы и стили предыдущих слайдов
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+      slide.style.opacity = 0;
+      slide.style.transform = 'translateX(-100%)';
+    });
+
+    // Устанавливаем активный слайд
+    const currentSlide = slides[currentSlideIndex];
+    currentSlide.classList.add('active');
+    currentSlide.style.opacity = 1;
+    currentSlide.style.transform = 'translateX(0)';
+
+    // Переключаем на следующий слайд
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+
+    // Обновляем слайдер 1 (slidee)
+    nextSlidee(); 
+  }
+
+  // Запускаем смену слайдов
+  setInterval(showSlide, 4000); 
+
+  // Первоначальная инициализация слайдеров
+  showSlide(); 
+  nextSlidee();
+</script>
+
+
+<center><h1 style="color: white; margin-top: 30px; margin-bottom: 30px;">Новости</h1></center>
+  <div class="containere">
+      <div class="item" id="item1">
+          <center><img src="image/news/новости_1.jpg" alt=""  class="novo"></center>
+          <h3 style="color: white;">ПРИЕМ ЗАЯВОК НА УЧАСТИЕ В КОНКУРСЕ ИННОВАЦИОННЫХ ПРОЕКТОВ МИЕЛОФОНД-2024 ДО 31 ИЮЛЯ<h3>
+          <div class="time"></div></div>
+      <div class="item" id="item2">
+          <center>
+              <img src="image/news/новости_2.jpg" alt=""  class="novo">
+          </center>
+        <h3 style="color: white;">МЕЖВУЗОВСКИЕ СОРЕВНОВАНИЯ ПО КАРАТЭ 19 МАЯ</h3> 
+          <div class="time"></div> 
+      </div>
+      <div class="item" id="item3">
+          <center>
+              <img src="image/news/новости_3.jpg" alt="" class="novo">
+          </center>
+        <h3 style="color: white;">СТУДЕНТКА ФИТ ЗАПУСКАЕТ СТАРТАП – ПРОИЗВОДСТВО БИОАКТИВНОЙ КОРМОВОЙ ДОБАВКИ</h3>
+          <div class="time"></div> 
+      </div>
+
+      <div class="item" id="item4">
+          <center>
+              <img src="image/news/новости_4.jpg" alt=""  class="novo">
+          </center>
+        <h3 style="color: white;">3-15 МАЯ МАСТЕР-КЛАССЫ ПО БАЗОВЫМ НАВЫКАМ ПИЛОТИРОВАНИЯ БАС ДЛЯ УЧЕНИКОВ МБОУ ТОГУРСКАЯ СОШ</h3>
+          <div class="time"></div> 
+      </div>
+
+      <div class="item" id="item5">
+          <center><img src="image/news/новости_5.jpg" alt="" class="novo"></center>
+        <h3 style="color: white;">АКЦИЯ ПАМЯТИ КО ДНЮ ПОБЕДЫ. ИСТОРИИ ГЕРОЕВ ВОЕННОГО ВРЕМЕНИ</h3>
+          <div class="time"></div> 
+      </div>
+      <div class="item" id="item6">
+          <center><img src="image/news/новости_6.jpg" alt="" width="300" height="150" class="novo"></center>
+        <h3 style="color: white;">ЕВРАЗИЙСКАЯ ПРЕМИЯ: ТГУ АКТИВНО ГОТОВИТ СПЕЦИАЛИСТОВ В ОБЛАСТИ БАС</h3>
+          <div class="time"></div> 
+      </div>
+      <div class="item" id="item7">
+          <center><img src="image/news/новости_7.jpg" alt=""  class="novo"></center>
+        <h3 style="color: white;">СТУДЕНЧЕСКИЙ ЭТАП СОРЕВНОВАНИЙ "ЛЕТАЙ В ТГУ"</h3>
+          <div class="time"></div> 
+      </div>
+      <div class="item" id="item8">
+          <center>
+              <img src="image/news/новости_8.jpg" alt=""  class="novo">
+          </center>
+        <h3 style="color: white;">СТУДЕНТЫ УЧАСТВУЮЩИЕ В КОНКУРСЕ НА ПОСЕЛЕНИЕ В 2024/2025 УЧ. ГОД</h3>
+          <div class="time"></div> 
+      </div>
+      <div class="item" id="item9">
+<center>
+  <img src="image/news/новости_9.jpg" alt="" class="novo">
+</center>
+<h3 style="color: white;">27 АПРЕЛЯ ПРОШЛИ СОРЕВНОВАНИЯ ПО УПРАВЛЕНИЮ И ПИЛОТИРОВАНИЮ БАС "ЛЕТАЙ В ТГУ"</h3>
+<div class="time"></div> 
+</div>
+</div>
+
+
+
+<center><h1>Разработки</h1></center> 
+<div class="containeree">
+  <div class="iteme">
+    <img src="image/developments/1.jpg" alt="Изображение 1">
+    <div class="overlay">
+      <a href="page1.html">Лазерный многоволновой источник на парах стронция 
+        для лидарной системы дистанционного мониторинга аэрозолей «ЛИЗА-04»</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/2.jpg" alt="Изображение 2">
+    <div class="overlay">
+      <a href="page2.html">Уникальная лазерная установка для исследования
+        лазерной резонансной абляции полимеров и биотканей</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/3.jpg" alt="Изображение 3">
+    <div class="overlay">
+      <a href="page3.html">Лазерный комплекс на парах стронция «Кулон-05Sr»</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/4.jpg" alt="Изображение 4">
+    <div class="overlay">
+      <a href="page4.html">Лазер на парах стронция Sr-10</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/5.jpg" alt="Изображение 5">
+    <div class="overlay">
+      <a href="page5.html">Цифровой рентгеновский микротомограф</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/6.jpg" alt="Изображение 6">
+    <div class="overlay">
+      <a href="page6.html">Дистанционно управляемая система</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/7.jpg" alt="Изображение 7">
+    <div class="overlay">
+      <a href="page7.html">Робот исследователь на гусеничном ходу</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="image/developments/8.jpg" alt="Изображение 8">
+    <div class="overlay">
+      <a href="page8.html">Лазер</a>
+    </div>
+  </div>
+</div>
+</body>
+</body>
+</html>

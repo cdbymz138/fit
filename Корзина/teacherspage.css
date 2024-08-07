@@ -1,0 +1,232 @@
+
+
+header {
+    background-color: #333; /* Темно-серый цвет шапки */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; /* Для позиционирования всплывающих блоков */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для всплывающего блока */
+    z-index: 1; /* Чтобы всплывающий блок был поверх других элементов */
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+
+nav li:hover .dropdown-content { /* Показываем всплывающий блок при наведении */
+    display: block;
+}
+
+
+
+.content {
+    background-color: lightskyblue; 
+    margin: 0 auto;
+    
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+.teacher-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.initials {
+    text-align: center;
+    background-color: grey;
+    width: 40%;
+}
+.initials:hover {
+    background-color: violet;
+    color: white
+}
+
+.initials h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.initials h2:hover {
+    text-decoration: underline;
+    
+}
+
+.initials p:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.initials p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-info {
+    
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.upload-block {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-block h3 {
+    margin-bottom: 10px;
+}
+
+.upload-block .upload-area {
+    display: flex;
+    align-items: center;
+}
+
+.upload-block .upload-area input[type="file"] {
+    display: none;
+}
+
+.upload-block .upload-area label {
+    background-color: greenyellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-block .upload-area label:hover {
+    background-color: #ddd;
+}
+
+.upload-block .upload-area .file-name {
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.upload-block textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы вертикально */
+    min-height: 100vh; /* Занимаем всю высоту экрана */
+}
+
+main {
+    
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%; 
+}
+.upload-block .drag-text {
+    text-align: center;
+    margin-top: 10px; /* Добавьте отступ сверху, если нужно */
+}
+
+
+.upload-block {
+    /* ... ваш существующий код ... */
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-buttons {
+        width: 100%;
+        padding: 10px;
+}
+
+
+.teacher-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Отступ для блока */
+    border: 1px solid #ccc; /* Граница для блока */
+    border-radius: 5px; /* Скругление углов */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.teacher-photo {
+    width: 200px; /* Ширина фото */
+    height: 200px; /* Автоматическая высота, чтобы сохранить пропорции */
+    margin-right: 20px; /* Отступ справа */
+    border-radius: 40%; /* Круглая форма фото */
+    overflow: hidden; /* Скрываем лишнее изображение, если оно не помещается в рамку */
+}
+
+.teacher-photo img {
+    width: 100%; /* Заполняем всю ширину контейнера */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    display: block; /* Убираем лишнее пространство */
+}
+
+

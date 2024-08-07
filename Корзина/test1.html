@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.containeree {
+ /* Темно-красный фон */
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем обтекание элементов */
+  justify-content: center; /* Выравнивание по центру */
+  padding: 20px;
+}
+
+.iteme {
+  width: 350px; /* Ширина блока */
+  margin: 20px; /* Увеличили отступы */ 
+  position: relative; /* Для позиционирования текста при наведении */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.iteme img {
+  width: 100%; /* Занимаем всю ширину блока */
+  height: auto; /* Автоматически подбираем высоту */
+  border-radius: 10px; /* Скругленные углы */
+  transition: transform 0.3s ease; /* Плавный переход при наведении */
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Полупрозрачная белая рамка */
+}
+
+.iteme:hover img {
+  transform: scale(1.1); /* Увеличиваем изображение при наведении */
+}
+
+.iteme:hover .overlay {
+  opacity: 1; /* Показываем текст при наведении */
+}
+
+.iteme .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  color: white;
+  opacity: 0; /* Скрываем текст по умолчанию */
+  transition: opacity 0.3s ease; /* Плавный переход при наведении */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Скругленные углы */
+}
+
+.iteme .overlay a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  margin-top: 50px; /* Увеличили отступ сверху */
+  margin-bottom: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <center><h1>Разработки</h1></center> <br>
+<div class="containeree">
+
+
+  <div class="iteme">
+    <img src="1.jpg" alt="Изображение 1">
+    <div class="overlay">
+      <a href="page1.html">Лазерный многоволновой источник на парах стронция 
+        для лидарной системы дистанционного мониторинга аэрозолей «ЛИЗА-04»</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="2.jpg" alt="Изображение 2">
+    <div class="overlay">
+      <a href="page2.html">Уникальная лазерная установка для исследования
+        лазерной резонансной абляции полимеров и биотканей</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="3.jpg" alt="Изображение 3">
+    <div class="overlay">
+      <a href="page3.html">Лазерный комплекс на парах стронция «Кулон-05Sr»</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="4.jpg" alt="Изображение 4">
+    <div class="overlay">
+      <a href="page4.html">Лазер на парах стронция Sr-10</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="5.jpg" alt="Изображение 5">
+    <div class="overlay">
+      <a href="page5.html">Цифровой рентгеновский микротомограф</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="6.jpg" alt="Изображение 6">
+    <div class="overlay">
+      <a href="page6.html">Дистанционно управляемая система</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="7.jpg" alt="Изображение 7">
+    <div class="overlay">
+      <a href="page7.html">Робот исследователь на гусеничном ходу</a>
+    </div>
+  </div>
+
+  <div class="iteme">
+    <img src="8.jpg" alt="Изображение 8">
+    <div class="overlay">
+      <a href="page8.html">Лазер</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

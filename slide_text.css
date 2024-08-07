@@ -1,0 +1,70 @@
+.containeree {
+    /* Темно-красный фон */
+     display: flex;
+     flex-wrap: wrap; /* Разрешаем обтекание элементов */
+     justify-content: center; /* Выравнивание по центру */
+     padding: 20px;
+   }
+   
+   .iteme {
+     width: 350px; /* Ширина блока */
+     margin: 0px; /* Увеличили отступы */ 
+     position: relative; /* Для позиционирования текста при наведении */
+     text-align: center; /* Выравнивание текста по центру */
+   }
+   
+   .iteme img {
+     width: 100%; /* Занимаем всю ширину блока */
+     height: auto; /* Автоматически подбираем высоту */
+     border-radius: 20px; /* Скругленные углы */
+     transition: transform 0.3s ease; /* Плавный переход при наведении */
+     border: 15px solid rgb(59, 0, 0); /* Полупрозрачная белая рамка */
+   }
+   
+   .iteme:hover img {
+     transform: scale(1.1); /* Увеличиваем изображение при наведении */
+   }
+   
+   .iteme:hover .overlay {
+     opacity: 1; /* Показываем текст при наведении */
+   }
+   
+   .iteme .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.738); /* Полупрозрачный черный фон */
+     color: white;
+     opacity: 0; /* Скрываем текст по умолчанию */
+     transition: opacity 0.3s ease; /* Плавный переход при наведении */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px; /* Скругленные углы */
+   }
+   
+   .iteme .overlay a {
+     text-decoration: none;
+     color: white;
+     font-size: 16px;
+     padding: 10px;
+   }
+   
+   h1 {
+     color: white;
+     margin-top: 50px; /* Увеличили отступ сверху */
+     margin-bottom: 30px;
+     text-align: center;
+   }
+   .iteme img {
+/* ... другие стили ... */
+filter: brightness(0.8); /* Уменьшаем яркость на 10% */
+}
+
+.iteme:hover img {
+/* ... другие стили ... */
+filter: brightness(1); /* Возвращаем яркость к 100% при наведении */
+}
